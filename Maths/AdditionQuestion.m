@@ -13,7 +13,7 @@
 // override init
 -(instancetype)init {
     if (self = [super init]) {
-        
+        NSString *randomAdditionQuestion;
     }
     return self;
 }
