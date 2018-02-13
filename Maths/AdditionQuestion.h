@@ -10,16 +10,16 @@
 
 @interface AdditionQuestion : NSObject
 
-//initializers
--(instancetype)init;
+
 
 //properties
-@property currentScore;
+//@property currentScore;
 
 //methods
 -(void) askRandomAdditionQuestion;
 -(void) answerRandomAdditionQuestion;
--(void) exitGame;
+
+//-(void) exitGame;
 
 
 @end
