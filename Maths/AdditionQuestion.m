@@ -13,7 +13,15 @@
 // override init
 -(instancetype)init {
     if (self = [super init]) {
-        NSString *randomAdditionQuestion;
+        // create two random ints
+        int firstRandomNumber = arc4random_uniform(500);
+        int secondRandomNumber = arc4random_uniform(500);
+        
+        // create question string with random numbers
+        NSString *randomAdditionQuestion = [NSString stringWithFormat:@"What is %i + %i?", firstRandomNumber, secondRandomNumber];
+        NSLog(@"%@", randomAdditionQuestion);
+        
+        randomAdditionQuestion = _question;
     }
     return self;
 }
