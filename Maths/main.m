@@ -16,9 +16,9 @@ int main(int argc, const char * argv[]) {
             
             AdditionQuestion *firstQuestion = [[AdditionQuestion alloc]init];
             
-            char inputNumber[255];
+            NSLog(@"%@", firstQuestion.question);
             
-            printf("Input a number 1-6: ");
+            char inputNumber[255];
             
             fgets(inputNumber, 255, stdin);
             
