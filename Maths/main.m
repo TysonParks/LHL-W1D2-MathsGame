@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
             
             fgets(inputNumber, 255, stdin);
             
+            NSLog(@"");
+            
             char inputChars[255];
             
             printf("Input a string: ");
