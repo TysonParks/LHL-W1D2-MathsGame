@@ -10,4 +10,8 @@
 
 @interface AdditionQuestion : NSObject
 
+-(void) askRandomAdditionQuestion;
+-(void) answerRandomAdditionQuestion;
+
+
 @end
