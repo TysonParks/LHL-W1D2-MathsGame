@@ -26,8 +26,11 @@ int main(int argc, const char * argv[]) {
             fgets(inputChars, 255, stdin);
             
             NSString *inputString = [NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
-            inputString = [inputString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+            NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceCharacterSet];
+            
+            inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
             NSLog(@"You entered the string %s.", inputChars);
+            NSLog(@"It has been converted and trimmed to %@", inputString);
             
             
         }
