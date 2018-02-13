@@ -17,11 +17,18 @@
         int firstRandomNumber = arc4random_uniform(500);
         int secondRandomNumber = arc4random_uniform(500);
         
-        // create question string with random numbers
+        // create question string with random numbers and log it
         NSString *randomAdditionQuestion = [NSString stringWithFormat:@"What is %i + %i?", firstRandomNumber, secondRandomNumber];
         NSLog(@"%@", randomAdditionQuestion);
         
-        randomAdditionQuestion = _question;
+        _question = randomAdditionQuestion;
+        
+        // calculate answer and log
+        int answer = firstRandomNumber + secondRandomNumber;
+        NSString *answerToQuestion = [NSString stringWithFormat:@"The answer is %i", answer];
+        _answer = answerToQuestion;
+        
+        
     }
     return self;
 }
