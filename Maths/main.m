@@ -14,6 +14,8 @@ int main(int argc, const char * argv[]) {
         // infinite while loop
         while (true) {
             
+            AdditionQuestion *firstQuestion = [[AdditionQuestion alloc]init];
+            
             char inputNumber[255];
             
             printf("Input a number 1-6: ");
