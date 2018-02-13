@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-    
+        // infinite while loop
         while (true) {
             
             char inputNumber[255];
@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
             fgets(inputChars, 255, stdin);
             
             NSString *inputString = [NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
-            NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceCharacterSet];
+            NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceAndNewlineCharacterSet];
             
             inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
             NSLog(@"You entered the string %s.", inputChars);
