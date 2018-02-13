@@ -13,11 +13,15 @@
 
 
 //properties
+@property NSString *question;
+@property NSString *answer;
+
+
 //@property currentScore;
 
 //methods
--(void) askRandomAdditionQuestion;
--(void) answerRandomAdditionQuestion;
+//-(void) askRandomAdditionQuestion;
+//-(void) answerRandomAdditionQuestion;
 
 //-(void) exitGame;
 
