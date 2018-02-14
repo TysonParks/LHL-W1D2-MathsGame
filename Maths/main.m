@@ -24,10 +24,10 @@ int main(int argc, const char * argv[]) {
         while (gameOn) {
             
             // Initialize instance of AdditionQuestion
-            AdditionQuestion *firstQuestion = [[AdditionQuestion alloc]init];
+            AdditionQuestion *nextQuestion = [[AdditionQuestion alloc]init];
             
             // Log question from AdditionQuestion
-            NSLog(@"%@\n", firstQuestion.question);
+            NSLog(@"%@\n", nextQuestion.question);
             
             // Initialize an InputHandler and use instance method to get user's input
 //            InputHandler *getUsersAnswer = [[InputHandler alloc]init];
@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
                 gameOn = NO;
                 continue;
             // Print Right! for correct answer
-            } else if ([userAnswer isEqualToString:firstQuestion.answer]) {
+            } else if ([userAnswer isEqualToString:nextQuestion.answer]) {
                 correctAnswer = YES;
                 scoreCard.rightCount++;
                 NSLog(@"Right!");
@@ -57,14 +57,14 @@ int main(int argc, const char * argv[]) {
                 correctAnswer = NO;
                 scoreCard.wrongCount++;
                 NSLog(@"Wrong!");
-                NSLog(@"The correct answer is %@", firstQuestion.answer);
+                NSLog(@"The correct answer is %@", nextQuestion.answer);
             }
             // Log the current score and percentage right
             NSLog(@"score: %i right, %i wrong ---- %@%%", scoreCard.rightCount, scoreCard.wrongCount, [scoreCard findPercentageRight]);
             
-            NSLog(@"The start time for the last question was %@", firstQuestion.startTime);
-            NSLog(@"The end time for the last question was %@", firstQuestion.endTime);
-            NSLog(@"The answer time for the last question was %.2f seconds", firstQuestion.answerTime);
+            NSLog(@"The start time for the last question was %@", nextQuestion.startTime);
+            NSLog(@"The end time for the last question was %@", nextQuestion.endTime);
+            NSLog(@"The answer time for the last question was %.2f seconds", nextQuestion.answerTime);
         }
         
         
