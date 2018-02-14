@@ -22,8 +22,10 @@
 
 // Methods
 -(NSString *)timeOutput {
-    
-    NSArray *totalAnswerTimes = [self.questions containsObject:]
+    for (AdditionQuestion *currentQuestion in self.questions) {
+        NSTimeInterval *currentTotalTime = currentQuestion.answerTime ;
+    }
+//    NSArray *totalAnswerTimes = [self.questions containsObject:]
     NSTimeInterval totalTime = [self.questions ];
     NSTimeInterval averageTime;
     
