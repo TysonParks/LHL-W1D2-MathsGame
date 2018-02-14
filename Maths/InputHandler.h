@@ -10,7 +10,11 @@
 
 @interface InputHandler : NSObject
 
-// Instance methods
+// Class method
++(NSString*) userInputAsString;
+
+
+// Instance method
 -(NSString*) returnUserInputAsString;
 
 @end

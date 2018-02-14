@@ -10,7 +10,21 @@
 
 @implementation InputHandler
 
-// Instance methods
+// Class method
++(NSString *)userInputAsString {
+    // Get input from user
+    char inputInt[255];
+    fgets(inputInt, 255, stdin);
+    
+    // Parse input from user
+    NSString *inputString = [NSString stringWithCString:inputInt encoding:NSUTF8StringEncoding];
+    NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
+    
+    return inputString;
+}
+
+// Instance method
 -(NSString *)returnUserInputAsString {
     // Get input from user
     char inputInt[255];
