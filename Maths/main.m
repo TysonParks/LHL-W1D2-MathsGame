@@ -29,7 +29,9 @@ int main(int argc, const char * argv[]) {
 //            InputHandler *getUsersAnswer = [[InputHandler alloc]init];
 //            NSString *userAnswer = [getUsersAnswer returnUserInputAsString];
             
-            // Initialize an InputHandler and use class method to get user's input
+            // Use InputHandler class method to get user's input
+            // This is great because you don't have to initialize an object
+            // And 1 less line of code!
             NSString *userAnswer = [InputHandler inputAsString];
             
             // Log user's output
