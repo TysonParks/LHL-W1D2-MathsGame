@@ -20,8 +20,13 @@
     return self;
 }
 
-// Properties
+// Methods
 -(NSString *)timeOutput {
+    
+    NSArray *totalAnswerTimes = [self.questions containsObject:]
+    NSTimeInterval totalTime = [self.questions ];
+    NSTimeInterval averageTime;
+    
     self.timeOutput = @"total time: 60s, average time: 10s";
     return self.timeOutput;
 }
