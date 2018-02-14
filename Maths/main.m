@@ -24,14 +24,6 @@ int main(int argc, const char * argv[]) {
             // Log question from AdditionQuestion
             NSLog(@"%@\n", firstQuestion.question);
             
-//            // Get input from user
-//            char inputInt[255];
-//            fgets(inputInt, 255, stdin);
-//
-//            // Parse input from user
-//            NSString *inputString = [NSString stringWithCString:inputInt encoding:NSUTF8StringEncoding];
-//            NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-//            inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
             
             InputHandler *getUsersAnswer = [[InputHandler alloc]init];
             NSString *userAnswer = [getUsersAnswer returnUserInputAsString];
