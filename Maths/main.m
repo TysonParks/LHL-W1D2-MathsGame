@@ -13,6 +13,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        // Bool to run or end game
         BOOL gameOn = YES;
         
         // infinite while loop

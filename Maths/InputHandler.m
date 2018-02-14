@@ -10,6 +10,7 @@
 
 @implementation InputHandler
 
+// Instance methods
 -(NSString *)returnUserInputAsString {
     // Get input from user
     char inputInt[255];

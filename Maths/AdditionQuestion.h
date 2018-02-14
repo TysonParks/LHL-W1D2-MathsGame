@@ -10,20 +10,8 @@
 
 @interface AdditionQuestion : NSObject
 
-
-
 //properties
 @property NSString *question;
 @property NSString *answer;
-
-
-//@property currentScore;
-
-//methods
-//-(void) askRandomAdditionQuestion;
-//-(void) answerRandomAdditionQuestion;
-
-//-(void) exitGame;
-
 
 @end
