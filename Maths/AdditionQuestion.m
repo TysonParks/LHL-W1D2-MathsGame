@@ -13,6 +13,10 @@
 // override init
 -(instancetype)init {
     if (self = [super init]) {
+        // Start timer
+        self.startTime = [NSDate date];
+        
+        
         // create two random number ints for math question
         int firstRandomNumber = arc4random_uniform(500);
         int secondRandomNumber = arc4random_uniform(500);
