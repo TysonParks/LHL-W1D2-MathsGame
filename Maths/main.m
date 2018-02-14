@@ -10,9 +10,13 @@
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        // Instance of QuestionManager
+        QuestionManager *questionManagement = [[QuestionManager alloc]init];
         
         // Bool to run or end game
         BOOL gameOn = YES;
