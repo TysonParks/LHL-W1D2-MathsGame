@@ -10,4 +10,6 @@
 
 @interface QuestionManager : NSObject
 
+@property (strong, nonatomic) NSArray *questions;
+
 @end
