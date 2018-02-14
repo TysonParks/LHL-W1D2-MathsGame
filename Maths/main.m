@@ -29,6 +29,7 @@ int main(int argc, const char * argv[]) {
             
             // Initialize instance of AdditionQuestion
             AdditionQuestion *nextQuestion = [[AdditionQuestion alloc]init];
+            [questionManagement.questions arrayByAddingObject:nextQuestion];
             
             // Log question from AdditionQuestion
             NSLog(@"%@\n", nextQuestion.question);
@@ -69,8 +70,8 @@ int main(int argc, const char * argv[]) {
             NSLog(@"The start time for the last question was %@", nextQuestion.startTime);
             NSLog(@"The end time for the last question was %@", nextQuestion.endTime);
             NSLog(@"The answer time for the last question was %.2f seconds", nextQuestion.answerTime);
+            NSLog(@"The question history is: %@", questionManagement.questions);
         }
-        
         
     }
     return 0;
