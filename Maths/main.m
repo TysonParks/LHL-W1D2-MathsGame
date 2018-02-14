@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
