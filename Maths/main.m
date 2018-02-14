@@ -20,7 +20,6 @@ int main(int argc, const char * argv[]) {
         // Initialize ScoreKeeper
         ScoreKeeper *scoreCard = [[ScoreKeeper alloc]init];
         
-        
         // infinite while loop
         while (gameOn) {
             
@@ -60,7 +59,8 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Wrong!");
                 NSLog(@"The correct answer is %@", firstQuestion.answer);
             }
-            NSLog(@"score: %i right, %i wrong", scoreCard.rightCount, scoreCard.wrongCount);
+            // Log the current score and percentage right
+            NSLog(@"score: %i right, %i wrong ---- %@", scoreCard.rightCount, scoreCard.wrongCount, [scoreCard findPercentageRight]);
         }
         
         
