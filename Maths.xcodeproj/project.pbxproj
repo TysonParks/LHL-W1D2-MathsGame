@@ -10,6 +10,7 @@
 		ADD55FB32033921100AB85A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD55FB22033921100AB85A4 /* main.m */; };
 		ADD55FBB20339B6500AB85A4 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD55FBA20339B6500AB85A4 /* AdditionQuestion.m */; };
 		ADD55FBE2033C52500AB85A4 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD55FBD2033C52500AB85A4 /* InputHandler.m */; };
+		ADD55FC12033CEB500AB85A4 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD55FC02033CEB500AB85A4 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		ADD55FBA20339B6500AB85A4 /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
 		ADD55FBC2033C52500AB85A4 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		ADD55FBD2033C52500AB85A4 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		ADD55FBF2033CEB500AB85A4 /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		ADD55FC02033CEB500AB85A4 /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				ADD55FB22033921100AB85A4 /* main.m */,
+				ADD55FBF2033CEB500AB85A4 /* ScoreKeeper.h */,
+				ADD55FC02033CEB500AB85A4 /* ScoreKeeper.m */,
 				ADD55FBC2033C52500AB85A4 /* InputHandler.h */,
 				ADD55FBD2033C52500AB85A4 /* InputHandler.m */,
 				ADD55FB920339B6500AB85A4 /* AdditionQuestion.h */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD55FC12033CEB500AB85A4 /* ScoreKeeper.m in Sources */,
 				ADD55FB32033921100AB85A4 /* main.m in Sources */,
 				ADD55FBE2033C52500AB85A4 /* InputHandler.m in Sources */,
 				ADD55FBB20339B6500AB85A4 /* AdditionQuestion.m in Sources */,
