@@ -60,7 +60,7 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"The correct answer is %@", firstQuestion.answer);
             }
             // Log the current score and percentage right
-            NSLog(@"score: %i right, %i wrong ---- %@", scoreCard.rightCount, scoreCard.wrongCount, [scoreCard findPercentageRight]);
+            NSLog(@"score: %i right, %i wrong ---- %@%%", scoreCard.rightCount, scoreCard.wrongCount, [scoreCard findPercentageRight]);
         }
         
         

@@ -10,8 +10,12 @@
 
 @interface AdditionQuestion : NSObject
 
-//properties
+// Question properties
 @property NSString *question;
 @property NSString *answer;
+
+// Time properties
+@property NSDate *startTime;
+@property NSDate *endTime;
 
 @end
