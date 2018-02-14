@@ -10,4 +10,11 @@
 
 @interface ScoreKeeper : NSObject
 
+//properties
+@property int rightCount;
+@property int wrongCount;
+
+//methods
+-(NSString *) percentageRight;
+
 @end
