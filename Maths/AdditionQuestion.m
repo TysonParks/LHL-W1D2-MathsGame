@@ -39,5 +39,10 @@
     return self;
 }
 
+- (NSString *)answer {
+    _endTime = [NSDate date];
+    return _answer;
+}
+
 
 @end

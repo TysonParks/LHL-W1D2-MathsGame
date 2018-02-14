@@ -11,11 +11,11 @@
 @interface AdditionQuestion : NSObject
 
 // Question properties
-@property NSString *question;
-@property NSString *answer;
+@property (strong, nonatomic) NSString *question;
+@property (strong, nonatomic) NSString *answer;
 
 // Time properties
-@property NSDate *startTime;
-@property NSDate *endTime;
+@property (strong, nonatomic) NSDate *startTime;
+@property (strong, nonatomic) NSDate *endTime;
 
 @end
