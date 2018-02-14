@@ -11,7 +11,7 @@
 @implementation InputHandler
 
 // Class method
-+(NSString *)userInputAsString {
++(NSString *)inputAsString {
     // Get input from user
     char inputInt[255];
     fgets(inputInt, 255, stdin);

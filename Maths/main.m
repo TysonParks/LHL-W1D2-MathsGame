@@ -25,9 +25,12 @@ int main(int argc, const char * argv[]) {
             // Log question from AdditionQuestion
             NSLog(@"%@\n", firstQuestion.question);
             
-            // Initialize an InputHandler and use it to get user's input
-            InputHandler *getUsersAnswer = [[InputHandler alloc]init];
-            NSString *userAnswer = [getUsersAnswer returnUserInputAsString];
+            // Initialize an InputHandler and use instance method to get user's input
+//            InputHandler *getUsersAnswer = [[InputHandler alloc]init];
+//            NSString *userAnswer = [getUsersAnswer returnUserInputAsString];
+            
+            // Initialize an InputHandler and use class method to get user's input
+            NSString *userAnswer = [InputHandler inputAsString];
             
             // Log user's output
             NSLog(@"You entered %@", userAnswer);
@@ -48,9 +51,6 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Wrong!");
                 NSLog(@"The correct answer is %@", firstQuestion.answer);
             }
-            
-            
-            
             
         }
         

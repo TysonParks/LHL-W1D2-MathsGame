@@ -11,7 +11,7 @@
 @interface InputHandler : NSObject
 
 // Class method
-+(NSString*) userInputAsString;
++(NSString*) inputAsString;
 
 
 // Instance method
