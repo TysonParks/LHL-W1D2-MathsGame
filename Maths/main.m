@@ -14,27 +14,33 @@ int main(int argc, const char * argv[]) {
         // infinite while loop
         while (true) {
             
+            // Initialize instance of AdditionQuestion
             AdditionQuestion *firstQuestion = [[AdditionQuestion alloc]init];
             
-            NSLog(@"%@", firstQuestion.question);
+            // Log question from AdditionQuestion
+            NSLog(@"%@\n", firstQuestion.question);
             
-            char inputNumber[255];
+            // Get input from user
+            char inputInt[255];
+            fgets(inputInt, 255, stdin);
             
-            fgets(inputNumber, 255, stdin);
-            
-            NSLog(@"");
-            
-            char inputChars[255];
-            
-            printf("Input a string: ");
-            // limit input to max 255 characters
-            fgets(inputChars, 255, stdin);
-            
-            NSString *inputString = [NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
+            // Parse input from user
+            NSString *inputString = [NSString stringWithCString:inputInt encoding:NSUTF8StringEncoding];
             NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-            
             inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
-            NSLog(@"You entered the string %s.", inputChars);
+            
+            //Check if user's answer is correct?
+            BOOL correctAnswer;
+            if ([inputString isEqualToString:firstQuestion.answer]) {
+                correctAnswer = YES;
+                NSLog(@"Right!");
+            } else {
+                correctAnswer = NO;
+                NSLog(@"Wrong!");
+            }
+            
+            
+            NSLog(@"You entered the string %s.", inputInt);
             NSLog(@"It has been converted and trimmed to %@", inputString);
             
             
