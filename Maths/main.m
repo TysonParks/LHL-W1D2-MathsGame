@@ -16,6 +16,9 @@ int main(int argc, const char * argv[]) {
         // Bool to run or end game
         BOOL gameOn = YES;
         
+        // ScoreKeeper
+        
+        
         // infinite while loop
         while (gameOn) {
             

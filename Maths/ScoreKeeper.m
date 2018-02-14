@@ -10,4 +10,12 @@
 
 @implementation ScoreKeeper
 
+-(NSString *)findPercentageRight {
+    
+    float percentage = ((float)_rightCount / ((float)_rightCount + (float)_wrongCount)) * 100;
+    NSString *percentageRight = [NSString stringWithFormat:@"%.0f %", percentage];
+    
+    return percentageRight;
+}
+
 @end

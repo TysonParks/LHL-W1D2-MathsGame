@@ -15,6 +15,6 @@
 @property int wrongCount;
 
 //methods
--(NSString *) percentageRight;
+-(NSString *) findPercentageRight;
 
 @end
