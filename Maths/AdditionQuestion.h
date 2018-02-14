@@ -17,6 +17,6 @@
 // Time properties
 @property (strong, nonatomic) NSDate *startTime;
 @property (strong, nonatomic) NSDate *endTime;
-@property (strong, nonatomic) NSDate *answerTime;
+@property (nonatomic) NSTimeInterval answerTime;
 
 @end

@@ -41,6 +41,10 @@
 
 - (NSString *)answer {
     _endTime = [NSDate date];
+//    NSDate *referenceStartTime = _startTime;
+//    NSDate * referenceEndTime = _endTime;
+//    NSTimeInterval answerTimeInSeconds = [referenceStartTime timeIntervalSinceDate:referenceEndTime];
+    _answerTime = [_endTime timeIntervalSinceDate:_startTime];
     return _answer;
 }
 
