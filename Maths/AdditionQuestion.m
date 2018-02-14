@@ -18,8 +18,8 @@
         
         
         // create two random number ints for math question
-        int firstRandomNumber = arc4random_uniform(500);
-        int secondRandomNumber = arc4random_uniform(500);
+        int firstRandomNumber = arc4random_uniform(10);
+        int secondRandomNumber = arc4random_uniform(10);
         
         // create question string with random numbers and addition and log it
         NSString *randomAdditionQuestion = [NSString stringWithFormat:@"%i + %i ?", firstRandomNumber, secondRandomNumber];
