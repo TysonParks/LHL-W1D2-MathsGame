@@ -11,8 +11,11 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        BOOL gameOn = YES;
+        
         // infinite while loop
-        while (true) {
+        while (gameOn) {
             
             // Initialize instance of AdditionQuestion
             AdditionQuestion *firstQuestion = [[AdditionQuestion alloc]init];
@@ -32,7 +35,11 @@ int main(int argc, const char * argv[]) {
             
             //Check if user's answer is correct?
             BOOL correctAnswer;
-            if ([inputString isEqualToString:firstQuestion.answer]) {
+            
+            if([inputString isEqualToString:@"quit"]) {
+                gameOn = NO;
+                continue;
+            } else if ([inputString isEqualToString:firstQuestion.answer]) {
                 correctAnswer = YES;
                 NSLog(@"Right!");
             } else {
