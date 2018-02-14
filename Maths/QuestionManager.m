@@ -10,4 +10,13 @@
 
 @implementation QuestionManager
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.questions = [[NSArray alloc]init];
+    }
+    return self;
+}
+
 @end
