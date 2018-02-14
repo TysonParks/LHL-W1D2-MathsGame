@@ -10,6 +10,7 @@
 
 @implementation QuestionManager
 
+// Override init method to initialize questions array
 - (instancetype)init
 {
     self = [super init];
@@ -18,5 +19,12 @@
     }
     return self;
 }
+
+// Properties
+-(NSString *)timeOutput {
+    self.timeOutput = @"total time: 60s, average time: 10s";
+    return self.timeOutput;
+}
+
 
 @end
