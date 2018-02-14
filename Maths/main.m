@@ -17,7 +17,8 @@ int main(int argc, const char * argv[]) {
         // Bool to run or end game
         BOOL gameOn = YES;
         
-        // ScoreKeeper
+        // Initialize ScoreKeeper
+        ScoreKeeper *scoreCard = [[ScoreKeeper alloc]init];
         
         
         // infinite while loop
@@ -50,14 +51,16 @@ int main(int argc, const char * argv[]) {
             // Print Right! for correct answer
             } else if ([userAnswer isEqualToString:firstQuestion.answer]) {
                 correctAnswer = YES;
+                scoreCard.rightCount++;
                 NSLog(@"Right!");
             //Print Wrong! for incorrect answer and give correct answer
             } else {
                 correctAnswer = NO;
+                scoreCard.wrongCount++;
                 NSLog(@"Wrong!");
                 NSLog(@"The correct answer is %@", firstQuestion.answer);
             }
-            
+            NSLog(@"score: %i right, %i wrong", scoreCard.rightCount, scoreCard.wrongCount);
         }
         
         
