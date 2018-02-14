@@ -25,7 +25,7 @@
         
         // calculate answer and log
         int answer = firstRandomNumber + secondRandomNumber;
-        NSString *answerToQuestion = [NSString stringWithFormat:@"The answer is %i", answer];
+        NSString *answerToQuestion = [NSString stringWithFormat:@"%i", answer];
 //        NSLog(@"%@", answerToQuestion);
         
         _answer = answerToQuestion;

@@ -28,6 +28,7 @@ int main(int argc, const char * argv[]) {
             NSString *inputString = [NSString stringWithCString:inputInt encoding:NSUTF8StringEncoding];
             NSCharacterSet *whiteSpaceAndNewLine = [NSCharacterSet whitespaceAndNewlineCharacterSet];
             inputString = [inputString stringByTrimmingCharactersInSet:whiteSpaceAndNewLine];
+            NSLog(@"You entered %@", inputString);
             
             //Check if user's answer is correct?
             BOOL correctAnswer;
@@ -38,10 +39,7 @@ int main(int argc, const char * argv[]) {
                 correctAnswer = NO;
                 NSLog(@"Wrong!");
             }
-            
-            
-            NSLog(@"You entered the string %s.", inputInt);
-            NSLog(@"It has been converted and trimmed to %@", inputString);
+            NSLog(@"The correct answer is %@", firstQuestion.answer);
             
             
         }
