@@ -24,7 +24,7 @@
 -(NSString *)timeOutput {
     
     // Initialize variables for incrementing addition loop and count
-    float oldTotalTime = [NSMutableArray ];
+    float oldTotalTime = 0;
     int totalQuestionsAsked = 0;
     
     // Addition loop for adding up answer times
