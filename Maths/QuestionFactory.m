@@ -9,5 +9,23 @@
 #import "QuestionFactory.h"
 
 @implementation QuestionFactory
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        // Create array to hold names of each subclass
+        NSArray *questionSubclassNames = @[@"AdditionQuestion", @"SubtractionQuestion", @"MultiplicationQuestion", @"DivisionQuestion"];
+    }
+    return self;
+}
+
+
+-(void)generateRandomQuestion {
+    
+    
+    //
+    
+    
+}
 
 @end
