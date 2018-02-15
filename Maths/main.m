@@ -67,10 +67,7 @@ int main(int argc, const char * argv[]) {
             // Log the current score and percentage right
             NSLog(@"score: %i right, %i wrong ---- %@%%", scoreCard.rightCount, scoreCard.wrongCount, [scoreCard findPercentageRight]);
             
-            NSLog(@"The start time for the last question was %@", nextQuestion.startTime);
-            NSLog(@"The end time for the last question was %@", nextQuestion.endTime);
-            NSLog(@"The answer time for the last question was %.2f seconds", nextQuestion.answerTime);
-            //NSLog(@"The question history is: %@", questionManagement.questions);
+//            NSLog(@"The answer time for the last question was %.2f seconds", nextQuestion.answerTime);
             NSLog(@"%@", [questionManagement timeOutput]);
         }
         
