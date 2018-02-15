@@ -11,9 +11,13 @@
 
 @interface QuestionManager : NSObject
 
+// Properties
 @property (strong, nonatomic) NSMutableArray *questions;
-//@property (strong, nonatomic) NSString *timeFeedback;
+@property (nonatomic) float totalTime;
+@property (nonatomic) float averageTime;
 
+
+// Methods
 - (NSString *) timeOutput;
 
 @end

@@ -24,25 +24,22 @@
 -(NSString *)timeOutput {
     
     // Initialize variables for incrementing addition loop and count
-    NSTimeInterval oldTotalTime = 0;
+    float oldTotalTime = [NSMutableArray ];
     int totalQuestionsAsked = 0;
     
     // Addition loop for adding up answer times
     for (AdditionQuestion *currentQuestion in self.questions) {
-        NSTimeInterval newTotalTime = oldTotalTime + currentQuestion.answerTime;
+        float newTotalTime = oldTotalTime + currentQuestion.answerTime;
         newTotalTime = oldTotalTime;
         totalQuestionsAsked++;  //increment question count
+        
     }
     // Final variables from which to form string
-    NSTimeInterval totalTime = oldTotalTime;
-    NSTimeInterval averageTime = totalTime / totalQuestionsAsked;
+    self.totalTime = oldTotalTime;
+    self.averageTime = self.totalTime / totalQuestionsAsked;
     
-    // Convert NSTimeInterval values to NSStrings
-    //NSString *totalTimeString = [[NSDateComponentsFormatter new]stringFromTimeInterval:totalTime];
-   // NSString *averageTimeString = [[NSDateComponentsFormatter new]stringFromTimeInterval:averageTime];
-    
-    //Construct final string
-    NSString *timeOutput = [NSString stringWithFormat:@"total time: %.2f average time: %.2f",totalTime, averageTime];
+    // Construct final string
+    NSString *timeOutput = [NSString stringWithFormat:@"total time: %.2f average time: %.2f", self.totalTime, self.averageTime];
     
 //    (@"total time: %@ average time: %@", totalTimeString, averageTimeString)
     return timeOutput;

@@ -71,7 +71,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"The end time for the last question was %@", nextQuestion.endTime);
             NSLog(@"The answer time for the last question was %.2f seconds", nextQuestion.answerTime);
             //NSLog(@"The question history is: %@", questionManagement.questions);
-            NSLog(@"%@", questionManagement.timeOutput);
+            NSLog(@"%@", [questionManagement timeOutput]);
         }
         
     }
