@@ -18,17 +18,17 @@
         
         
         // create two random number ints for math question
-        int firstRandomNumber = arc4random_uniform(10);
-        int secondRandomNumber = arc4random_uniform(10);
+        self.rightValue = arc4random_uniform(10);
+        self.leftValue = arc4random_uniform(10);
         
         // create question string with random numbers and addition and log it
-        NSString *randomAdditionQuestion = [NSString stringWithFormat:@"%i + %i ?", firstRandomNumber, secondRandomNumber];
+        NSString *randomAdditionQuestion = [NSString stringWithFormat:@"%i + %i ?", self.rightValue, self.leftValue];
 //        NSLog(@"%@", randomAdditionQuestion);
         
         self.question = randomAdditionQuestion;
         
         // calculate answer and log
-        int answer = firstRandomNumber + secondRandomNumber;
+        int answer = self.rightValue + self.leftValue;
         NSString *answerToQuestion = [NSString stringWithFormat:@"%i", answer];
 //        NSLog(@"%@", answerToQuestion);
         
