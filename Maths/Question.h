@@ -21,4 +21,7 @@
 @property (strong, nonatomic) NSDate *endTime;
 @property (nonatomic) NSTimeInterval answerTime;
 
+//Methods
+- (void) generateQuestion;
+
 @end

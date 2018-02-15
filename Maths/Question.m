@@ -17,22 +17,18 @@
         self.startTime = [NSDate date];
         
         
-        // create two random number ints for math question
-        self.rightValue = arc4random_uniform(10);
-        self.leftValue = arc4random_uniform(10);
-        
-        // create question string with random numbers and addition and log it
-        NSString *randomAdditionQuestion = [NSString stringWithFormat:@"%i + %i ?", self.rightValue, self.leftValue];
-//        NSLog(@"%@", randomAdditionQuestion);
-        
-        self.question = randomAdditionQuestion;
-        
-        // calculate answer and log
-        int answer = self.rightValue + self.leftValue;
-        NSString *answerToQuestion = [NSString stringWithFormat:@"%i", answer];
-//        NSLog(@"%@", answerToQuestion);
-        
-        self.answer = answerToQuestion;
+//        // create two random number ints for math question
+//        self.rightValue = arc4random_uniform(10);
+//        self.leftValue = arc4random_uniform(10);
+//
+//        // create question string with random numbers and addition and log it
+//        NSString *randomAdditionQuestion = [NSString stringWithFormat:@"%i + %i ?", self.rightValue, self.leftValue];
+//        self.question = randomAdditionQuestion;
+//
+//        // calculate answer and log
+//        int answer = self.rightValue + self.leftValue;
+//        NSString *answerToQuestion = [NSString stringWithFormat:@"%i", answer];
+//        self.answer = answerToQuestion;
         
         
     }
