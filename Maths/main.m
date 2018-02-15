@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         while (gameOn) {
             
             // Initialize instance of AdditionQuestion
-            AdditionQuestion *nextQuestion = [[AdditionQuestion alloc]init];
+            Question *nextQuestion = [[Question alloc]init];
             questionManagement.questions = [questionManagement.questions arrayByAddingObject:nextQuestion];
             
             // Log question from AdditionQuestion

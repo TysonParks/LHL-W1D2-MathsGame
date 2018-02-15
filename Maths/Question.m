@@ -6,9 +6,9 @@
 //  Copyright © 2018 Tyson Parks. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import "Question.h"
 
-@implementation AdditionQuestion
+@implementation Question
 
 // override init
 -(instancetype)init {

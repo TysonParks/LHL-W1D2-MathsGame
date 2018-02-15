@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AdditionQuestion : NSObject
+@interface Question : NSObject
 
 // Question properties
 @property (strong, nonatomic) NSString *question;
