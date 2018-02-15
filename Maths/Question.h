@@ -11,6 +11,8 @@
 @interface Question : NSObject
 
 // Question properties
+@property (nonatomic) NSInteger rightValue;
+@property (nonatomic) NSInteger leftValue;
 @property (strong, nonatomic) NSString *question;
 @property (strong, nonatomic) NSString *answer;
 
