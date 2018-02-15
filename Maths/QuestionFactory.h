@@ -10,4 +10,7 @@
 
 @interface QuestionFactory : NSObject
 
+// Methods
+- (void) generateRandomQuestion;
+
 @end
